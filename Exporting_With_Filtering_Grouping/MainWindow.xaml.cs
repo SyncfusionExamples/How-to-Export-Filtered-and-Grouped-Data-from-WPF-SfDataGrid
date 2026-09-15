@@ -52,7 +52,9 @@ namespace Exporting_With_Filtering_Grouping
                 {
 
                     //Launching the Excel file using the default Application.[MS Excel Or Free ExcelViewer]
-                    System.Diagnostics.Process.Start(sfd.FileName);
+                    System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo(sfd.FileName);
+                    info.UseShellExecute = true;
+                    System.Diagnostics.Process.Start(info);
                 }
             }
         }
@@ -79,7 +81,9 @@ namespace Exporting_With_Filtering_Grouping
                 {
 
                     //Launching the Pdf file using the default Application.
-                    System.Diagnostics.Process.Start(sfd.FileName);
+                    System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo(sfd.FileName);
+                    info.UseShellExecute = true;
+                    System.Diagnostics.Process.Start(info);
                 }
             }
         }

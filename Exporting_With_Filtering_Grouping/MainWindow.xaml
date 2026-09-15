@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exporting_With_Filtering_Grouping"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         mc:Ignorable="d"
-        Title="SfDataGridDemo" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="SfDataGridDemo" Height="450" Width="800">
+
     <Window.DataContext>
         <local:ViewModel/>
     </Window.DataContext>
@@ -16,10 +17,10 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <syncfusion:SfDataGrid x:Name="dataGrid" Grid.Row="0" 
-                               ItemsSource="{Binding Orders}" 
-                               AllowGrouping="True"
-                               AllowFiltering="True"
-                               ShowGroupDropArea="True"/>
+                              ItemsSource="{Binding Orders}" 
+                              AllowGrouping="True"
+                              AllowFiltering="True"
+                              ShowGroupDropArea="True"/>
         <StackPanel Grid.Row="1" Orientation="Horizontal">
             <Button Content="Export to Excel" Height="50" Width="100" Click="OnExportToExcel" Margin="10"/>
             <Button Content="Export to PDF" Height="50" Width="100" Click="OnExportToPDF" Margin="10" />
