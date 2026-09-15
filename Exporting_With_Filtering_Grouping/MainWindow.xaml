@@ -1,0 +1,30 @@
+﻿<Window x:Class="Exporting_With_Filtering_Grouping.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exporting_With_Filtering_Grouping"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="SfDataGridDemo" Height="450" Width="800">
+
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <syncfusion:SfDataGrid x:Name="dataGrid" Grid.Row="0" 
+                              ItemsSource="{Binding Orders}" 
+                              AllowGrouping="True"
+                              AllowFiltering="True"
+                              ShowGroupDropArea="True"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Export to Excel" Height="50" Width="100" Click="OnExportToExcel" Margin="10"/>
+            <Button Content="Export to PDF" Height="50" Width="100" Click="OnExportToPDF" Margin="10" />
+            <Button Content="Print the Grid" Height="50" Width="100" Click="OnPrinting"  Margin="10" />
+        </StackPanel>
+    </Grid>
+</Window>
