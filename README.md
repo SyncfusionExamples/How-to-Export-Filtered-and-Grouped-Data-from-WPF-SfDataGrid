@@ -60,7 +60,7 @@ Exporting_With_Filtering_Grouping/
 
 ## Technology Stack
 
-- **Framework**: .NET Framework
+- **Framework**: .NET Framework (net8.0)
 - **Language**: C#
 - **UI Framework**: WPF (Windows Presentation Foundation)
 - **Component**: Syncfusion DataGrid for WPF
