@@ -141,9 +141,6 @@ Exporting_With_Filtering_Grouping/
 - .NET Framework 4.6.2 or higher
 - Syncfusion WPF components (obtained via NuGet package manager)
 
-## License
-
-This example is provided by Syncfusion as a demonstration of the SfDataGrid control capabilities. Please refer to the Syncfusion license terms for usage and distribution rights.
 
 ## Support & Resources
 
