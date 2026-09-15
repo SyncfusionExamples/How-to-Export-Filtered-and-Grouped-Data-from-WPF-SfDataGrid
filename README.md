@@ -53,9 +53,7 @@ The Syncfusion WPF DataGrid (`SfDataGrid`) is a powerful data visualization cont
 - .NET Framework 4.6.2 or higher (or .NET Core 3.1+)
 - Syncfusion WPF components (included via NuGet)
 
-## License
 
-Please refer to the Syncfusion license terms for usage and distribution.
 
 ## Support
 
